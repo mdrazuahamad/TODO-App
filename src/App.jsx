@@ -222,16 +222,6 @@ function formatDate(dateStr) {
   return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
 }
 
-// const TagListItem = ({ tag }) => {
-//   return (
-//     <li className='tag-item' key={tag.id}>
-//       <i
-//         className={`fa fa-${tag.icon}`}
-//         style={{ color: tag.color, marginRight: "8px" }}></i>
-//       {tag.text}
-//     </li>
-//   );
-// };
 const TagListItem = ({ tag }) => {
   return (
     <li key={tag.id} className={`tag-item ${tag.color}`}>
